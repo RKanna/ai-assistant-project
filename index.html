@@ -16,11 +16,63 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    /> -->
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <title>AI Assistant Project</title>
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <script src="./scripts/script.js"></script>
+    <section class="content-section">
+      <h1 class="heading">Hello there!</h1>
+      <span class="para"
+        >Meet Your Personal Assistant, your new personal assistant with an
+        outstanding personality!</span
+      >
+    </section>
+
+    <div class="container">
+      <div class="behind-slab">
+        <div class="slab1"></div>
+        <div class="slab2"></div>
+      </div>
+      <div class="center-slab">
+        <div class="cslab1"></div>
+        <div class="cslab2"></div>
+      </div>
+      <div class="front-slab">
+        <div class="fslab1"></div>
+        <div class="fslab2"></div>
+      </div>
+
+      <div class="ai-assistant circle breathe-and-jump" id="ai-assistant">
+        <div class="eyes">
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+        </div>
+      </div>
+
+      <div class="bottom-circle jump-pulse"></div>
+    </div>
+
+    <div class="round-section">
+      <ul class="command-list">
+        <li><i class="far fa-clouds" onclick="getWeather();"></i></li>
+        <li><i class="far fa-clock" onclick="getTime();"></i></li>
+        <li><i class="far fa-calendar-alt" onclick="getDate();"></i></li>
+        <li><i class="far fa-grin-squint-tears" onclick="tellJoke();"></i></li>
+        <li><i class="far fa-search" onclick="searchGoogle();"></i></li>
+        <li>
+          <i class="far fa-lightbulb-on" onclick="showInspiration();"></i>
+        </li>
+        <p class="hey-felix lead"></p>
+      </ul>
+
+      <div class="new-div3"></div>
+    </div>
+    <script src="./scripts/script.js" defer></script>
   </body>
 </html>
