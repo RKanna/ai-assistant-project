@@ -21,17 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// window.addEventListener("click", function () {
-//   const slabs = document.querySelectorAll(
-//     ".behind-slab, .center-slab, .front-slab"
-//   );
-
-//   slabs.forEach((slab) => {
-//     slab.classList.add("transition-effect");
-//     slab.style.display = "flex";
-//   });
-// });
-
 window.addEventListener("click", function () {
   const slabs = document.querySelectorAll(
     ".behind-slab, .center-slab, .front-slab"
@@ -46,13 +35,8 @@ window.addEventListener("click", function () {
     slabs.forEach((slab) => {
       slab.style.display = "none";
     });
-  }, 6000); // 6000 milliseconds = 6 seconds
+  }, 6000);
 });
-
-// window.addEventListener("load", function () {
-//   const clickable = document.getElementById("clickable");
-//   clickable.style.cursor = "pointer";
-// });
 
 const calendar = document.getElementById("calendar");
 const hoverText = document.getElementById("hover-text");
@@ -62,21 +46,8 @@ const googleSearch = document.getElementById("googleSearch");
 const weatherCheck = document.getElementById("weatherCheck");
 const inspiration = document.getElementById("inspiration");
 
-// window.addEventListener("click", function () {
-//   const calendar = document.getElementById("calendar");
-//   calendar.style.display = Date();
-// });
-
 const overLay = document.getElementById("overlay-container");
 overLay.style.display = "none";
-
-// window.addEventListener("click", function () {
-//   let aiAssistant = document.getElementById("ai-assistant");
-//   const calendar = document.getElementById("calendar");
-//   const overLayText = document.getElementById("overlayText");
-//   overLay.style.display = "flex";
-//   overLayText.textContent = new Date().toString();
-// });
 
 function funDate() {
   const overLayText = document.getElementById("overlayText");
